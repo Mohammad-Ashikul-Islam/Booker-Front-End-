@@ -26,7 +26,7 @@ function AllProducts() {
   useEffect(()=>{
     const getProducts = async () =>{
       try {
-        const res = await axios.get ("http://localhost:5000/products/find_all" );
+        const res = await axios.get ("https://smoggy-boa-cap.cyclic.app/products/find_all" );
        setProducts(res.data);
       } catch (err) {
         console.log(err);

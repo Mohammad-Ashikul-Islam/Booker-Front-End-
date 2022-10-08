@@ -97,7 +97,7 @@ const ProductDetails = ({user}) => {
         const token = "Bearer " + user.acessToken;
         await axios({
             method: 'post',
-            url: "http://localhost:5000/carts/add",
+            url: "https://smoggy-boa-cap.cyclic.app/carts/add",
             headers: {token}, 
             data: {"username": user.username, "productname": receivedProduct.title, "author": receivedProduct.author, "img": receivedProduct.img, "price": receivedProduct.price ,"quantity": quantity }
           })

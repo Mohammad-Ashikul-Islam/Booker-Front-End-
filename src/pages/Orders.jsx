@@ -98,7 +98,7 @@ const Orders = ({user}) => {
         const token = "Bearer " + user.acessToken;
         await axios({
           method: 'get',
-          url: `http://localhost:5000/orders/find/${user.username}`,
+          url: `https://smoggy-boa-cap.cyclic.app/orders/find/${user.username}`,
           headers: {token}, 
         })
         .then((response) => {
@@ -117,7 +117,7 @@ const Orders = ({user}) => {
         const token = "Bearer " + user.acessToken;
         await axios({
             method: 'put',
-            url: `http://localhost:5000/orders/update/${order._id}`,
+            url: `https://smoggy-boa-cap.cyclic.app/orders/update/${order._id}`,
             headers: {token},
             data: {
                 Status: "Canceled"

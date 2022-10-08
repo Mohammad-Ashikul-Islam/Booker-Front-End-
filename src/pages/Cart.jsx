@@ -160,7 +160,7 @@ const Cart = ({user}) => {
       const token = "Bearer " + user.acessToken;
       await axios({
         method: 'get',
-        url: `http://localhost:5000/carts/find/${user.username}`,
+        url: `https://smoggy-boa-cap.cyclic.app/carts/find/${user.username}`,
         headers: {token}, 
       })
       .then((response) => {
@@ -182,7 +182,7 @@ const Cart = ({user}) => {
         const token = "Bearer " + user.acessToken;
         await axios({
             method: 'delete',
-            url: `http://localhost:5000/carts/delete/${cartProductId}`,
+            url: `https://smoggy-boa-cap.cyclic.app/carts/delete/${cartProductId}`,
             headers: {token} 
           })
           .then((response) => {
@@ -207,7 +207,7 @@ const Cart = ({user}) => {
       const token = "Bearer " + user.acessToken;
       await axios({
         method: 'delete',
-        url: `http://localhost:5000/carts/clear/${user.username}`,
+        url: `https://smoggy-boa-cap.cyclic.app/carts/clear/${user.username}`,
         headers: {token} 
       })
       .then((response) => {
@@ -228,7 +228,7 @@ const Cart = ({user}) => {
         const token = "Bearer " + user.acessToken;
         await axios({
           method: 'post',
-          url: `http://localhost:5000/orders/add`,
+          url: `https://smoggy-boa-cap.cyclic.app/orders/add`,
           headers: {token},
           data: {"username": user.username, "elements": userCart, "address": userAddress, "phone": userPhone, "amount": amountTotal } 
         })

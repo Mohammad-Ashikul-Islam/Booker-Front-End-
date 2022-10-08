@@ -70,7 +70,7 @@ const ManageAllUsers = ({user}) => {
         const token = "Bearer " + user.acessToken;
         await axios({
           method: 'get',
-          url: "http://localhost:5000/users/find_all",
+          url: "https://smoggy-boa-cap.cyclic.app/users/find_all",
           headers: {token}, 
         })
         .then((response) => {
@@ -90,7 +90,7 @@ const ManageAllUsers = ({user}) => {
         const Username = item.username;
         await axios({
             method: 'put',
-            url: "http://localhost:5000/users/admin/make",
+            url: "https://smoggy-boa-cap.cyclic.app/users/admin/make",
             headers: {token},
             data: {
                 userName: Username
