@@ -4,7 +4,7 @@
 
 ## Technology Used
 ### **Front-End:** ReactJS,Axios,Styled Components,React-Icons
-### **Back-End:** NodeJS,ExpressJS,JWT,Mongoose,CRUD,Crypto-JS,Cors
+### **Back-End:** NodeJS,ExpressJS,MVC Architecture,JWT,Mongoose,CRUD,Crypto-JS,Cors
 ### **Version-Control:** Git, Github
 ### **Deployment:** Vercel(Front-end), Railway(Back-end)
 
