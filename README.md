@@ -1,20 +1,76 @@
-# BOOKER - A Complete Book Selling Website 
-### <a href="https://booker-cyan.vercel.app/">Live_Site_Link</a>  |  <a href="https://smoggy-boa-cap.cyclic.app/">Back_End_API_Link</a>  |  <a href="https://github.com/Mohammad-Ashikul-Islam/Booker-Back-End-">Back_End_Code</a>
+# BOOKER 
 
 
-## Technology Used
-### **Front-End:** ReactJS, Axios, Styled Components, React-Icons
-### **Back-End:** NodeJS, ExpressJS, MVC Architecture, JWT, Mongoose, CRUD, Crypto-JS, Cors
-### **Version-Control:** Git, Github
-### **Deployment:** Vercel(Front-end), Cyclic(Back-end)
+### Built with 
 
-## Features (User)
-### User may Register,Login,Logout
-### Can watch products, products details, add to cart (stored in database and does not get erased untill user does)
-### User can order products, Cancel the Ordered product and watch live order status as Pending/Canceled/Approved/Rejected
-### JWT token keeps user logged in for 3hours and after that logs out automatically
+<p align="center">
+    <img width="200" src="./src/preview/MERN.jpg">
+</p>
 
-## Features (Admin)
-### Admin can watch all users and make a user as Admin
-### Admin can watch all pending orders and approve/reject them
-### Admin can add new products to the site
+- Frontend:  [React](https://react.dev/), [Styled-Components](https://styled-components.com/), [Axios](https://axios-http.com/docs/intro) & [React-Icons](https://react-icons.github.io/react-icons/)
+- Backend: [Node](https://nodejs.org/en), [Express](https://expressjs.com/), [Mongoose](https://mongoosejs.com/), [JWT](https://jwt.io/) & [CryptoJs](https://www.npmjs.com/package/crypto-js)
+
+## Demo
+<p align="center"> 
+  <b> <a href="https://booker-cyan.vercel.app/"> Live_Link </a>&nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;<a href="https://github.com/Mohammad-Ashikul-Islam/Booker-Back-End-"> Backend_Code </a> </b>
+</p>
+
+<p align="center">
+    <br>
+    <img width="900" src="./src/preview/Booker1.png">
+    <br>
+    <img width="900" src="./src/preview/Booker2.png">
+    <br>
+</p>
+
+
+
+## Features
+
+- Create account or Login as a User
+- Watch products & products details and add to cart permanently as a user
+- Place order, watch live order status pending, approved, cancel or rejected as a user
+- Cancel order or remove product from permanent cart as user
+- Login as an admin, watch all pending orders
+- As an admin, Approve or Rejeact user orders or promote a user to admin role 
+- Add new product to the site as an admin
+- Auto logout from current session after three hours of login
+
+## Build Setup
+
+**Frontend Server**
+
+``` bash
+# install dependencies
+npm install 
+
+# start server
+npm start
+
+# build for production 
+npm run build
+
+# serve in production mode 
+npm run preview
+
+```
+
+**Backend Server**
+
+``` bash
+# install dependencies
+npm install 
+
+# start server
+npm start
+
+# start in development mode
+npm run dev
+
+```
+
+## Deployment
+- Frontend: [Vercel](https://vercel.com/)
+- Backend: [Cyclic](https://www.cyclic.sh/)
+
+> Due to [Vercel](https://render.com) and [Cyclic's](https://www.cyclic.sh/) internal system of free tier, first request on app or backend API may take longer time than the usual, even upto a minute. So, please consider the issue and wait till the Cyclic/Vercel server wakes up or reload in case of the first front-end connection freezing/backend connection freezing happens. Thank you
